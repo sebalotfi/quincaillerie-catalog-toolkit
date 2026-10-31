@@ -1,0 +1,41 @@
+﻿{
+  "services": {
+    "termes_exacts": [
+      "LIVRAISON",
+      "TRANSPORT",
+      "MAIN D'EUVRE",
+      "MAIN D'OEUVRE",
+      "PORT",
+      "POSE",
+      "DEPLACEMENT"
+    ],
+    "mots_cles": [
+      "LIVRAISON",
+      "TRANSPORT",
+      "MAIN D'EUVRE",
+      "MAIN D'OEUVRE"
+    ]
+  },
+  "familles": {
+    "visserie": {
+      "nom_affiche": "Visserie & Boulonnerie",
+      "mots_cles_detection": [
+        "BOULON",
+        "VIS",
+        "TIR-FOND",
+        "TIREFOND",
+        "ECROU",
+        "RONDELLE",
+        "TIGE FILETEE"
+      ],
+      "regex_dimensions": [
+        "(?:(?P<diametre>\\d+(?:[.,]\\d+)?)\\s*[*xX]\\s*(?P<longueur>\\d+(?:[.,]\\d+)?))",
+        "(?:M(?P<diametre_m>\\d+)\\s*[*xX]\\s*(?P<longueur_m>\\d+))"
+      ],
+      "regle_fiche": {
+        "champ_cle_fiche": ["nom_base", "diametre"],
+        "champ_declinaison": "longueur"
+      }
+    }
+  }
+}
