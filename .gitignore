@@ -1,0 +1,33 @@
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+
+# Caches Python et tests
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Catalogues locaux. Seul l'exemple fictif du dépôt est versionné.
+*.csv
+*.xlsx
+*.xls
+!exemples/*.csv
+
+# Vérifications et fichiers système
+verification-*.png
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
